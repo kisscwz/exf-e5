@@ -16,8 +16,6 @@ def download_content(url):
     return html_content
 
 
-# 第二个函数，将字符串内容保存到文件中
-# 第一个参数为所要保存的文件名，第二个参数为要保存的字符串内容的变量
 def save_to_file(filename, content):
     fo = open(filename, "w", encoding="utf-8")
     fo.write(content)
@@ -25,7 +23,6 @@ def save_to_file(filename, content):
 
 
 def main():
-    # 下载报考指南的网页
     url = "https://zkaoy.com/sions/exam"
     result = download_content(url)
     save_to_file("tips1.html", result)
