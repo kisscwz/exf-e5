@@ -1,8 +1,6 @@
-# file_name:html_parse.py
-# 解析方法一
+
 from bs4 import BeautifulSoup
 
-# 输入参数为要分析的 html 文件名，返回值为对应的 BeautifulSoup 对象
 def create_doc_from_filename(filename):
 	with open(filename, "r", encoding='utf-8') as f:
 		html_content = f.read()
