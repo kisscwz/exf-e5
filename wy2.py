@@ -1,5 +1,4 @@
-# requests 代码
-# file_name:Crawler_requests.py
+
 import requests
 
 
@@ -13,15 +12,12 @@ def download_content(url):
     return response
 
 
-# 第二个函数，将字符串内容保存到文件中
-# 第一个参数为所要保存的文件名，第二个参数为要保存的字符串内容的变量
 def save_to_file(filename, content):
     with open(filename, mode="w", encoding="utf-8") as f:
         f.write(content)
 
 
 def main():
-    # 下载报考指南的网页
     url = "https://zkaoy.com/sions/exam"
     result = download_content(url)
     save_to_file("tips1.html", result)
