@@ -1,5 +1,4 @@
-# urllib3 的方法
-# file_name:Crawler_urllib3.py
+
 import urllib3
 
 
