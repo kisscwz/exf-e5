@@ -26,8 +26,7 @@ def download_images(url, save_dir):
         except:
             print(f"下载图片失败：{img_name}")
 
-# 调用函数，传入要爬取的网页链接和保存图片的文件夹路径
-url = "https://example.com"  # 替换为你要爬取的网页链接
-save_dir = "images"  # 替换为你要保存图片的文件夹路径
+url = "https://pixabay.com/zh/" 
+save_dir = "/tp/wl" 
 download_images(url, save_dir)
 ```
